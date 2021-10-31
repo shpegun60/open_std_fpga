@@ -5,7 +5,7 @@
 */
 // ************************************************************
 
-module oh_8b10b_decode
+module std_8b10b_decode
 (
 	input		clk,			//Input Clock
 	input		nreset,			//Synchronous Active-Low reset
