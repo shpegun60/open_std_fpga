@@ -44,7 +44,7 @@ generate
 		
 		assign w_posedge 	 = ~r1_input  &  r0_input;
 		assign w_negedge 	 =  r1_input  & ~r0_input;
-		assign w_bothedge  =  w_posedge |  w_negedge;
+		assign w_bothedge  =    r1_input  ^ ~r0_input;
 		
 		always_ff @(posedge i_clk, negedge i_reset) begin
 			if(~i_reset) begin

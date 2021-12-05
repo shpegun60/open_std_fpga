@@ -24,7 +24,7 @@ end
 
 assign o_posedge 	 = ~r0_input &  i_signal;
 assign o_negedge 	 =  r0_input & ~i_signal;
-assign o_bothedge 	 =  o_posedge | o_negedge;
+assign o_bothedge 	 =  r0_input ^ i_signal;
 
 endmodule: std_simple_edge_detector
 /****************************************************************************************************************************/
